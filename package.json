@@ -1,0 +1,21 @@
+{
+  "name": "jwt-auth-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvaroMedina777/jwt-auth-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/alvaroMedina777/jwt-auth-api/issues"
+  },
+  "homepage": "https://github.com/alvaroMedina777/jwt-auth-api#readme"
+}
