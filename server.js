@@ -4,7 +4,7 @@ const authRoutes = require("./routes/authRoutes")
 const app = express();
 
 app.use(express.json());
-app.use("/auth", authRoutes);
+app.use("/api/auth", authRoutes);
 
 async function iniciarServidor() {
     await connectionDB();
