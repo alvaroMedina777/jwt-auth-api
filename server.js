@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express");
 const connectionDB = require("./config/database");
 const authRoutes = require("./routes/authRoutes")
@@ -9,8 +11,8 @@ app.use("/api/auth", authRoutes);
 async function iniciarServidor() {
     await connectionDB();
 
-    app.listen(3000, () => {
-    console.log("Servidor funcionando en el puerto 3000");
+    app.listen(process.env.PORT || 3000, () => {
+    console.log(`Servidor funcionando en el puerto ${process.env.PORT || 3000}`);
 });
 }
 
