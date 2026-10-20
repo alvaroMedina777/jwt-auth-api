@@ -1,5 +1,14 @@
 require("dotenv").config();
 
+const variablesRequeridas = ["MONGODB_URI", "JWT_SECRET"];
+
+for (const variable of variablesRequeridas) {
+  if (!process.env[variable]?.trim()) {
+    console.error(`Error: falta configurar la variable ${variable}`);
+    process.exit(1);
+  }
+}
+
 const express = require("express");
 const connectionDB = require("./config/database");
 const authRoutes = require("./routes/authRoutes")
